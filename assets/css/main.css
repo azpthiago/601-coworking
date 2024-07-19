@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: "Outfit", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -179,7 +180,7 @@ main {
     }
 
     .card-text {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -187,6 +188,34 @@ main {
     .locais {
         height: 100dvh;
     }
+}
+
+/* Perguntas Frequentes */
+
+.perguntas-frequentes {
+    height: 100dvh;
+}
+
+.accordion {
+
+    --bs-accordion-color: #white;
+    --bs-accordion-bg: none;
+
+    --bs-accordion-active-color: #0099E0;
+    --bs-accordion-active-bg: #1c1c1c;
+
+    --bs-accordion-border-color: rgba(255, 255, 255, 0.576);
+    --bs-accordion-border-radius: 0.2rem ;
+    --bs-accordion-inner-border-radius: 0.2rem;
+}
+
+.accordion-button {
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-body {
+    color: white;
 }
 
 /* footer */
@@ -298,6 +327,18 @@ footer {
 	animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+@keyframes slide-bottom {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.slide-bottom {
+	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
 .hidden {
     opacity: 0;
